@@ -1,0 +1,3 @@
+id,name,price,active,released,category
+1,Example tool,12.50,true,2026-10-31,tool
+2,Example game,0,false,,game

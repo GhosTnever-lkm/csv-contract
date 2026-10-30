@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "allow_extra_columns": false,
+  "columns": {
+    "id": {"type": "integer", "min": 1},
+    "name": {"type": "string", "nonempty": true},
+    "price": {"type": "decimal", "min": 0, "max": 10000},
+    "active": {"type": "boolean"},
+    "released": {"type": "date", "nullable": true},
+    "category": {"type": "string", "enum": ["tool", "game"]}
+  },
+  "unique": [["id"]]
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-contract"
+version = "0.1.0"
+description = "Bounded local CSV validation against explicit JSON contracts"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "GhosTnever"}]
+keywords = ["csv", "validation", "data-quality", "cli", "local-first"]
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+csv-contract = "csv_contract.cli:main"
+
+[project.urls]
+Repository = "https://github.com/GhosTnever-lkm/csv-contract"
+
+[tool.setuptools.packages.find]
+where = ["src"]
